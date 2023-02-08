@@ -1,2 +1,2 @@
-const counter = 5
+const counter = 0
 console.log(counter);
