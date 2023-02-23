@@ -6,11 +6,17 @@
   "author": "alexeyYashin <alexeyyashin@mail.ru>",
   "license": "MIT",
   "scripts": {
-    "watch" : "tsc -w",
-    "dev" : "nodemon --inspect ./dist/index.js"
+    "watch": "tsc -w",
+    "dev": "nodemon --inspect ./dist/index.js",
+    "test": "jest"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "@types/jest": "^29.4.0",
+    "@types/supertest": "^2.0.12",
+    "express": "^4.18.2",
+    "jest": "^29.4.3",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.0.5"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
