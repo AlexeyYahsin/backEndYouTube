@@ -1,5 +1,6 @@
 import express from 'express'
-const app = express()
+
+export const app = express()
 const port = 3003
 const jsonBodyMidlleware = express.json()
 
@@ -78,6 +79,11 @@ app.put('/courses/:id', (req, res) => {
   foundCourse.title = req.body.title
 
   res.json(foundCourse)
+})
+
+app.delete('/...test.../data', (req, res) => {
+  db.courses = []
+  res.sendStatus(204)
 })
 
 app.listen(port, () => {
